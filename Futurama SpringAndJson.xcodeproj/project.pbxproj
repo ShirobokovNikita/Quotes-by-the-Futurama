@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60EE95DD727344A5C9C4CFF7 /* Pods_Futurama_SpringAndJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA757105CC51231CD1F7328 /* Pods_Futurama_SpringAndJson.framework */; };
+		E028001A293BC7BF00879E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0280019293BC7BF00879E95 /* AppDelegate.swift */; };
+		E028001C293BC7BF00879E95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E028001B293BC7BF00879E95 /* SceneDelegate.swift */; };
+		E028001E293BC7BF00879E95 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E028001D293BC7BF00879E95 /* WelcomeViewController.swift */; };
+		E0280021293BC7BF00879E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E028001F293BC7BF00879E95 /* Main.storyboard */; };
+		E0280023293BC7C000879E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0280022293BC7C000879E95 /* Assets.xcassets */; };
+		E0280026293BC7C000879E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0280024293BC7C000879E95 /* LaunchScreen.storyboard */; };
+		E028002E293CAC9500879E95 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E028002D293CAC9500879E95 /* PersonViewController.swift */; };
+		E0280032293CE14100879E95 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0280031293CE14100879E95 /* Person.swift */; };
+		E0D97868293F4FC400ED8301 /* IPersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D97867293F4FC400ED8301 /* IPersonService.swift */; };
+		E0D9786A293F4FE500ED8301 /* PersonsPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D97869293F4FE500ED8301 /* PersonsPresentor.swift */; };
+		E0D9786C293F500A00ED8301 /* IPersonsViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D9786B293F500A00ED8301 /* IPersonsViewDataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C2DDD2E31A1B1CE8B00AFEC /* Pods-Futurama SpringAndJson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Futurama SpringAndJson.debug.xcconfig"; path = "Target Support Files/Pods-Futurama SpringAndJson/Pods-Futurama SpringAndJson.debug.xcconfig"; sourceTree = "<group>"; };
+		70E9DE1FBEFB21DF0E17A6E6 /* Pods-Futurama SpringAndJson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Futurama SpringAndJson.release.xcconfig"; path = "Target Support Files/Pods-Futurama SpringAndJson/Pods-Futurama SpringAndJson.release.xcconfig"; sourceTree = "<group>"; };
+		E0280016293BC7BF00879E95 /* Futurama SpringAndJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Futurama SpringAndJson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0280019293BC7BF00879E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E028001B293BC7BF00879E95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E028001D293BC7BF00879E95 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E0280020293BC7BF00879E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0280022293BC7C000879E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0280025293BC7C000879E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0280027293BC7C000879E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E028002D293CAC9500879E95 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		E0280031293CE14100879E95 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E0D97867293F4FC400ED8301 /* IPersonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPersonService.swift; sourceTree = "<group>"; };
+		E0D97869293F4FE500ED8301 /* PersonsPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsPresentor.swift; sourceTree = "<group>"; };
+		E0D9786B293F500A00ED8301 /* IPersonsViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPersonsViewDataSource.swift; sourceTree = "<group>"; };
+		EBA757105CC51231CD1F7328 /* Pods_Futurama_SpringAndJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Futurama_SpringAndJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0280013293BC7BF00879E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60EE95DD727344A5C9C4CFF7 /* Pods_Futurama_SpringAndJson.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07FCCF90FD7C4D3BB17FDCF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C2DDD2E31A1B1CE8B00AFEC /* Pods-Futurama SpringAndJson.debug.xcconfig */,
+				70E9DE1FBEFB21DF0E17A6E6 /* Pods-Futurama SpringAndJson.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CB401C00834524A7566FC355 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBA757105CC51231CD1F7328 /* Pods_Futurama_SpringAndJson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E028000D293BC7BF00879E95 = {
+			isa = PBXGroup;
+			children = (
+				E0280018293BC7BF00879E95 /* Futurama SpringAndJson */,
+				E0280017293BC7BF00879E95 /* Products */,
+				07FCCF90FD7C4D3BB17FDCF5 /* Pods */,
+				CB401C00834524A7566FC355 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0280017293BC7BF00879E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0280016293BC7BF00879E95 /* Futurama SpringAndJson.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0280018293BC7BF00879E95 /* Futurama SpringAndJson */ = {
+			isa = PBXGroup;
+			children = (
+				E0D97863293F4EC700ED8301 /* Flow */,
+				E0280019293BC7BF00879E95 /* AppDelegate.swift */,
+				E028001B293BC7BF00879E95 /* SceneDelegate.swift */,
+				E028001F293BC7BF00879E95 /* Main.storyboard */,
+				E0280022293BC7C000879E95 /* Assets.xcassets */,
+				E0280024293BC7C000879E95 /* LaunchScreen.storyboard */,
+				E0280027293BC7C000879E95 /* Info.plist */,
+			);
+			path = "Futurama SpringAndJson";
+			sourceTree = "<group>";
+		};
+		E0D97863293F4EC700ED8301 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E0D97864293F4EE700ED8301 /* Persons */,
+				E0D97866293F4F1900ED8301 /* Service */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		E0D97864293F4EE700ED8301 /* Persons */ = {
+			isa = PBXGroup;
+			children = (
+				E028001D293BC7BF00879E95 /* WelcomeViewController.swift */,
+				E028002D293CAC9500879E95 /* PersonViewController.swift */,
+				E0D97869293F4FE500ED8301 /* PersonsPresentor.swift */,
+				E0D9786B293F500A00ED8301 /* IPersonsViewDataSource.swift */,
+			);
+			path = Persons;
+			sourceTree = "<group>";
+		};
+		E0D97865293F4F0100ED8301 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0280031293CE14100879E95 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0D97866293F4F1900ED8301 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E0D97865293F4F0100ED8301 /* Model */,
+				E0D97867293F4FC400ED8301 /* IPersonService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0280015293BC7BF00879E95 /* Futurama SpringAndJson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E028002A293BC7C000879E95 /* Build configuration list for PBXNativeTarget "Futurama SpringAndJson" */;
+			buildPhases = (
+				FBEA67B71292CE93339CD047 /* [CP] Check Pods Manifest.lock */,
+				E0280012293BC7BF00879E95 /* Sources */,
+				E0280013293BC7BF00879E95 /* Frameworks */,
+				E0280014293BC7BF00879E95 /* Resources */,
+				F0E88E8FAE7028AAA8EB2013 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Futurama SpringAndJson";
+			productName = "Futurama SpringAndJson";
+			productReference = E0280016293BC7BF00879E95 /* Futurama SpringAndJson.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E028000E293BC7BF00879E95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E0280015293BC7BF00879E95 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = E0280011293BC7BF00879E95 /* Build configuration list for PBXProject "Futurama SpringAndJson" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E028000D293BC7BF00879E95;
+			productRefGroup = E0280017293BC7BF00879E95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0280015293BC7BF00879E95 /* Futurama SpringAndJson */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0280014293BC7BF00879E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0280026293BC7C000879E95 /* LaunchScreen.storyboard in Resources */,
+				E0280023293BC7C000879E95 /* Assets.xcassets in Resources */,
+				E0280021293BC7BF00879E95 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F0E88E8FAE7028AAA8EB2013 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Futurama SpringAndJson/Pods-Futurama SpringAndJson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Futurama SpringAndJson/Pods-Futurama SpringAndJson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Futurama SpringAndJson/Pods-Futurama SpringAndJson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBEA67B71292CE93339CD047 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Futurama SpringAndJson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0280012293BC7BF00879E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0D9786C293F500A00ED8301 /* IPersonsViewDataSource.swift in Sources */,
+				E0D97868293F4FC400ED8301 /* IPersonService.swift in Sources */,
+				E028001E293BC7BF00879E95 /* WelcomeViewController.swift in Sources */,
+				E0D9786A293F4FE500ED8301 /* PersonsPresentor.swift in Sources */,
+				E028001A293BC7BF00879E95 /* AppDelegate.swift in Sources */,
+				E028001C293BC7BF00879E95 /* SceneDelegate.swift in Sources */,
+				E0280032293CE14100879E95 /* Person.swift in Sources */,
+				E028002E293CAC9500879E95 /* PersonViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E028001F293BC7BF00879E95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0280020293BC7BF00879E95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0280024293BC7C000879E95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0280025293BC7C000879E95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0280028293BC7C000879E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0280029293BC7C000879E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E028002B293BC7C000879E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2DDD2E31A1B1CE8B00AFEC /* Pods-Futurama SpringAndJson.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MKKVV86K5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Futurama SpringAndJson/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruShirobokov97-yandex.Futurama-SpringAndJson";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E028002C293BC7C000879E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E9DE1FBEFB21DF0E17A6E6 /* Pods-Futurama SpringAndJson.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MKKVV86K5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Futurama SpringAndJson/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruShirobokov97-yandex.Futurama-SpringAndJson";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0280011293BC7BF00879E95 /* Build configuration list for PBXProject "Futurama SpringAndJson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0280028293BC7C000879E95 /* Debug */,
+				E0280029293BC7C000879E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E028002A293BC7C000879E95 /* Build configuration list for PBXNativeTarget "Futurama SpringAndJson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E028002B293BC7C000879E95 /* Debug */,
+				E028002C293BC7C000879E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E028000E293BC7BF00879E95 /* Project object */;
+}

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hw9-3o-Icz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Futurama_SpringAndJson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Futurama_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Y5n-7n-dSA" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="20" y="347" width="374" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="5Co-St-dWm"/>
+                                    <constraint firstAttribute="height" constant="121" id="aGl-Jb-HK2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="cloud2" translatesAutoresizingMaskIntoConstraints="NO" id="u6c-kc-2io">
+                                <rect key="frame" x="20" y="80" width="181" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="SLl-U0-xdV"/>
+                                    <constraint firstAttribute="width" constant="181" id="pcy-6e-chU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideRight"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easyOut"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="xYI-dj-Gi9">
+                                <rect key="frame" x="212" y="156" width="184" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="MPs-CF-n9f"/>
+                                    <constraint firstAttribute="width" constant="184" id="hES-Ho-H46"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easyOut"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shuttle" translatesAutoresizingMaskIntoConstraints="NO" id="NGQ-U0-Syi">
+                                <rect key="frame" x="104" y="638" width="206" height="133.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNr-EU-VIK" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="146.5" y="465" width="121" height="76"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="51"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xYI-dj-Gi9" secondAttribute="trailing" constant="18" id="1m8-Qz-mhd"/>
+                            <constraint firstItem="u6c-kc-2io" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5EW-Fe-ywX"/>
+                            <constraint firstItem="u6c-kc-2io" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="DIY-sd-myl"/>
+                            <constraint firstItem="GNr-EU-VIK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MhP-p8-Pdd"/>
+                            <constraint firstItem="Y5n-7n-dSA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PVk-U1-Ivo"/>
+                            <constraint firstItem="Y5n-7n-dSA" firstAttribute="top" secondItem="xYI-dj-Gi9" secondAttribute="bottom" constant="85" id="bLU-o7-LBs"/>
+                            <constraint firstItem="GNr-EU-VIK" firstAttribute="top" secondItem="Y5n-7n-dSA" secondAttribute="bottom" constant="-3" id="cRO-He-4ae"/>
+                            <constraint firstItem="NGQ-U0-Syi" firstAttribute="top" secondItem="Y5n-7n-dSA" secondAttribute="bottom" constant="170" id="cu2-Um-MuF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y5n-7n-dSA" secondAttribute="trailing" constant="20" id="fTL-9d-GVh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NGQ-U0-Syi" secondAttribute="trailing" constant="104" id="gwk-4B-tdK"/>
+                            <constraint firstItem="xYI-dj-Gi9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="o33-yF-gQr"/>
+                            <constraint firstItem="NGQ-U0-Syi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="xSe-I0-zGJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Hw9-3o-Icz" kind="presentation" identifier="ShowPerson" id="Byj-OT-mOj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68.115942028985515" y="3.3482142857142856"/>
+        </scene>
+        <!--Person View Controller-->
+        <scene sceneID="e3P-PZ-8dS">
+            <objects>
+                <viewController id="Hw9-3o-Icz" customClass="PersonViewController" customModule="Futurama_SpringAndJson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d6y-aG-7qZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gN2-fi-Ayv">
+                                <rect key="frame" x="50" y="234" width="314" height="379"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="379" id="icQ-cm-Uhv"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="MC4-eI-qql">
+                                <rect key="frame" x="129" y="68" width="156" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOx-lW-zhQ">
+                                        <rect key="frame" x="23.5" y="0.0" width="109.5" height="31.5"/>
+                                        <string key="text">Quotes by 
+</string>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Futurama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0C6-mG-5Cv">
+                                        <rect key="frame" x="0.0" y="34.5" width="156" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eag-p9-fWR">
+                                <rect key="frame" x="50" y="633" width="314" height="21.5"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="O2q-qL-FZp">
+                                <rect key="frame" x="197" y="409" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwX-8x-Tsz">
+                                <rect key="frame" x="50" y="184" width="314" height="30"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9U-6P-fVg">
+                                <rect key="frame" x="100" y="695" width="214" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="boX-Mq-Xbj"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show Another Person"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cf2-7y-iAC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eag-p9-fWR" firstAttribute="top" secondItem="gN2-fi-Ayv" secondAttribute="bottom" constant="20" id="0Te-kD-HsR"/>
+                            <constraint firstItem="gN2-fi-Ayv" firstAttribute="leading" secondItem="Cf2-7y-iAC" secondAttribute="leading" constant="50" id="3Im-mc-H8Z"/>
+                            <constraint firstItem="MC4-eI-qql" firstAttribute="leading" secondItem="Cf2-7y-iAC" secondAttribute="leading" constant="129" id="7ID-Qo-Wy5"/>
+                            <constraint firstItem="QwX-8x-Tsz" firstAttribute="width" secondItem="gN2-fi-Ayv" secondAttribute="width" id="ET0-dE-j65"/>
+                            <constraint firstItem="Eag-p9-fWR" firstAttribute="leading" secondItem="Cf2-7y-iAC" secondAttribute="leading" constant="50" id="KCq-nv-8PD"/>
+                            <constraint firstItem="Eag-p9-fWR" firstAttribute="width" secondItem="gN2-fi-Ayv" secondAttribute="width" id="KfN-lF-HkV"/>
+                            <constraint firstItem="Cf2-7y-iAC" firstAttribute="bottom" secondItem="i9U-6P-fVg" secondAttribute="bottom" constant="86" id="N3a-YN-Umb"/>
+                            <constraint firstItem="QwX-8x-Tsz" firstAttribute="top" secondItem="MC4-eI-qql" secondAttribute="bottom" constant="50" id="PfM-5a-i5P"/>
+                            <constraint firstItem="Cf2-7y-iAC" firstAttribute="trailing" secondItem="MC4-eI-qql" secondAttribute="trailing" constant="129" id="TTF-8b-zBv"/>
+                            <constraint firstItem="Cf2-7y-iAC" firstAttribute="trailing" secondItem="QwX-8x-Tsz" secondAttribute="trailing" constant="50" id="TVr-aN-cUQ"/>
+                            <constraint firstItem="gN2-fi-Ayv" firstAttribute="top" secondItem="QwX-8x-Tsz" secondAttribute="bottom" constant="20" id="V5K-iC-QRU"/>
+                            <constraint firstItem="QwX-8x-Tsz" firstAttribute="leading" secondItem="Cf2-7y-iAC" secondAttribute="leading" constant="50" id="ZcA-Nr-Wk7"/>
+                            <constraint firstItem="O2q-qL-FZp" firstAttribute="centerY" secondItem="d6y-aG-7qZ" secondAttribute="centerY" id="a4g-fD-Ty3"/>
+                            <constraint firstItem="MC4-eI-qql" firstAttribute="top" secondItem="Cf2-7y-iAC" secondAttribute="top" constant="20" id="bL7-LF-PWW"/>
+                            <constraint firstItem="Cf2-7y-iAC" firstAttribute="trailing" secondItem="Eag-p9-fWR" secondAttribute="trailing" constant="50" id="dNR-mW-zdR"/>
+                            <constraint firstItem="Cf2-7y-iAC" firstAttribute="trailing" secondItem="i9U-6P-fVg" secondAttribute="trailing" constant="100" id="jj8-BC-ywx"/>
+                            <constraint firstItem="i9U-6P-fVg" firstAttribute="leading" secondItem="Cf2-7y-iAC" secondAttribute="leading" constant="100" id="jrL-7L-Z6W"/>
+                            <constraint firstItem="Cf2-7y-iAC" firstAttribute="trailing" secondItem="gN2-fi-Ayv" secondAttribute="trailing" constant="50" id="kYB-99-2hl"/>
+                            <constraint firstItem="O2q-qL-FZp" firstAttribute="centerX" secondItem="d6y-aG-7qZ" secondAttribute="centerX" id="vwn-cY-GF7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eve-8y-9j9"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="O2q-qL-FZp" id="aOO-hf-479"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Dx-Mh-GmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.6521739130435" y="2.6785714285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Futurama_logo" width="1200" height="391"/>
+        <image name="cloud1" width="1502" height="867.33331298828125"/>
+        <image name="cloud2" width="1389" height="700.33331298828125"/>
+        <image name="shuttle" width="304" height="133.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

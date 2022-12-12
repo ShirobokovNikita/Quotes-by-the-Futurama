@@ -1,0 +1,6 @@
+framework module Pods_Futurama_SpringAndJson {
+  umbrella header "Pods-Futurama SpringAndJson-umbrella.h"
+
+  export *
+  module * { export * }
+}
